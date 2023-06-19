@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "74a3d9b6-80bc-445f-b89e-33b72a671f37",
+		"name": "SampleWebApplication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16029623"
+	},
+	"item": [
+		{
+			"name": "GetUserDetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7275/User/GetUserDetails/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7275",
+					"path": [
+						"User",
+						"GetUserDetails",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Bruce\",\r\n    \"job\": \"Wayne\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7275/User/CreateUser",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7275",
+					"path": [
+						"User",
+						"CreateUser"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
